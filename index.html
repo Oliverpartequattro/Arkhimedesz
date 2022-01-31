@@ -5,14 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkhimédész</title>
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Arkhimédész!</h1>
-    <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, velit hic? Blanditiis magnam error vel sapiente nostrum eaque magni et dicta voluptas tenetur! Doloremque, id optio? In, cum. Quas, corporis?</span><span>Nemo libero voluptatem assumenda non nihil enim velit ullam fugit a beatae dolore repellendus nobis impedit officia perferendis fugiat iste, est ea pariatur laborum dicta autem culpa quasi eligendi. Repellendus!</span><span>Maxime amet, sit reprehenderit nobis officiis modi et, ratione enim, architecto facere perferendis iusto deleniti omnis! Voluptatem voluptas inventore unde sequi. Delectus cupiditate earum impedit ea quam ut sequi error.</span></p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Arkhimédész</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Élete</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Munkássága
+                </a>
+                <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Találmányai
+                </a>
+                <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    <h1 class="text-white bg-info">Arkhimédész!</h1>
+    <p class="bg-success"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, velit hic? Blanditiis magnam error vel sapiente nostrum eaque magni et dicta voluptas tenetur! Doloremque, id optio? In, cum. Quas, corporis?</span><span>Nemo libero voluptatem assumenda non nihil enim velit ullam fugit a beatae dolore repellendus nobis impedit officia perferendis fugiat iste, est ea pariatur laborum dicta autem culpa quasi eligendi. Repellendus!</span><span>Maxime amet, sit reprehenderit nobis officiis modi et, ratione enim, architecto facere perferendis iusto deleniti omnis! Voluptatem voluptas inventore unde sequi. Delectus cupiditate earum impedit ea quam ut sequi error.</span></p>
 
 
-    <script src="bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
