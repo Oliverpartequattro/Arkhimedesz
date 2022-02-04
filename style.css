@@ -6,6 +6,11 @@
     --bs-info-rgb: 27, 64, 121;
     --bs-warning-rgb: 220, 190, 21;
     --bs-danger-rgb: 245, 93, 62;
+    --bs-custom-rgb: 64, 50, 51;
+}
+
+#szin{
+  background-image: linear-gradient(red, red, yellow);
 }
 
 .dropdown-item {
@@ -38,3 +43,4 @@
     pointer-events: none;
     background-color: transparent;
   }
+
