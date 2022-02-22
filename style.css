@@ -9,14 +9,26 @@
     --bs-custom-rgb: 64, 50, 51;
 }
 
-/* #szin{
+.cursor-help{
+  cursor: help;
+}
+ /* #szin{
   background-image: linear-gradient(gray, black);
   opacity: 70%;
   color: red;
   text-shadow: #1e2125;
   border-radius: 3%;
   margin-left: 100px;
+} 
+
+#szin:hover{
+  background-color: aqua;
+}
+
+.carousel-caption:hover{
+  background-color: aqua;
 } */
+
 
 .dropdown-item {
     display: block;
@@ -49,6 +61,15 @@
     background-color: transparent;
   }
 
-  .carousel-item:hover{
-    background-color: aqua;
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover{
+    opacity: 100;
+    color: rgb(220, 190, 21);
+    transition: 500ms;
+    
+    
   }
