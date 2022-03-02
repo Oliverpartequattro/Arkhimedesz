@@ -1,4 +1,7 @@
-@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
     --bs-primary-rgb: 64, 50, 51; 
     --bs-secondary-rgb: 107, 129, 140;
@@ -69,7 +72,10 @@
   a:hover{
     opacity: 100;
     color: rgb(220, 190, 21);
-    transition: 500ms;
-    
-    
+    transition: 500ms; 
+  }
+
+  a:not(:hover){
+    opacity: 100;
+    transition: 0.5s;
   }
