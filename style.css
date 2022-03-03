@@ -1,5 +1,12 @@
 html {
   scroll-behavior: smooth;
+  
+}
+
+body{
+  background-image: url(képek/bg3.jpg);
+  background-repeat: repeat;
+  
 }
 
 :root {
@@ -15,6 +22,8 @@ html {
 .cursor-help{
   cursor: help;
 }
+
+
  /* #szin{
   background-image: linear-gradient(gray, black);
   opacity: 70%;
@@ -62,6 +71,10 @@ html {
     color: #adb5bd;
     pointer-events: none;
     background-color: transparent;
+  }
+
+  .align-justify{
+    text-align: justify;
   }
 
   a{
