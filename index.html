@@ -8,13 +8,14 @@
   <title>Arkhimédész</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
 <body>
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-opacity fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Arkhimédész</a>
+        <a class="navbar-brand" href="#elete">Arkhimédész</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -88,7 +89,7 @@
           <a href="#elete">
             <div class="carousel-caption d-none d-md-block bg-primary rounded opacity-75" id="szin">
               <h5>A tudós élete</h5>
-             <a href="#elete">Ide kattintva érdekes információkat tudhat meg Arkhimédész életéről.</a>
+             <a data-bs-toggle="collapse" data-bs-target="#collapseLife" href="#elete">Ide kattintva érdekes információkat tudhat meg Arkhimédész életéről.</a>
             </div>
           </a>
         </div>
@@ -134,56 +135,76 @@
     <div class="mb-3"></div>
 <!-- carousel -->
 
-<div class="bg-primary border border-warning border border-1 rounded-2">
+<div class="bg-opacity border border-warning border border-1 rounded-2 ">
 
-  <p id="elete"> 
-    Arkhimédész egy ókori görög természettudós, matematikus, mérnök, fizikus, csillagász, filozófus és feltaláló volt.
-    I.e. 287-ben <span class="font-weight-bold cursor-help hover-shadow" title="Mai nevén Szirakúza">Szürakuszaiban</span> született. 
-    Több matematikatörténész is őt tartja a legnagyobb matematikusok egyikének
-  </p>
+  
 
   <p class="float-end">
     
   </p>
-  <div class="card col-12 col-md-6 col-xl-4 col-xxl-3 align-justify ms-3">
+  <div class="card m-5 col-12 col-md-6 col-xl-4 col-xxl-3 text-center ms-3">
     <img src="képek/arkhcard.jpg" class="card-img-top mx-auto" alt="Arkhimédész">
     <div class="card-body">
-      <h5 class="card-title" data-bs-toggle="collapse" data-bs-target="#collapseelete">Arkhimédész élete</h5>
-      <div class="collapse" id="collapseelete">
+      <h5 class="card-title cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseLife">Arkhimédész élete</h5>
+      <div class="collapse" id="collapseLife">
         <h6 class="fst-italic">Rövid leírás</h6>
-        <p class="card-text align-justify">
+        <p class="card-text">
+          <p> 
+            Arkhimédész egy ókori görög természettudós, matematikus, mérnök, fizikus, csillagász, filozófus és feltaláló volt.
+            I.e. 287-ben <span class="font-weight-bold cursor-help hover-shadow" title="Mai nevén Szirakúza">Szürakuszaiban</span> született.
+          <p>
+              <button class="btn btn-primary" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseMap" aria-expanded="false" aria-controls="collapseMap">
+                Térkép
+              </button>
+            </p> 
+
+          <div class="collapse" id="collapseMap">
+            <div class="card card-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3991897.5325579247!2d13.566069800655216!3d39.14942246075954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313ce8da28bdf79%3A0xd1736683b2c58b87!2s96100%20Szirak%C3%BAza%2C%20Siracusa%20megye%2C%20Olaszorsz%C3%A1g!5e0!3m2!1shu!2shu!4v1645552533274!5m2!1shu!2shu" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+            <br>
+
+          <p id="elete">
+            Több matematikatörténész is őt tartja a legnagyobb matematikusok egyikének.
+          </p>
+
+          <button class="btn btn-warning" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#collapseMore" aria-expanded="false" aria-controls="collapseMore">
+          Több<span class="bi bi-arrow-down-short"></span>
+          </button>
+        </p> 
+
+      <div class="collapse" id="collapseMore">
+        <div class="card card-body">
           <p> 
             Pár év múlva visszaköltözött rokona, II. Hierón szürakszai király udvarába, itt élte le élete hátralevő részét. 
           </p>
-          
-          <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Térkép
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3991897.5325579247!2d13.566069800655216!3d39.14942246075954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313ce8da28bdf79%3A0xd1736683b2c58b87!2s96100%20Szirak%C3%BAza%2C%20Siracusa%20megye%2C%20Olaszorsz%C3%A1g!5e0!3m2!1shu!2shu!4v1645552533274!5m2!1shu!2shu" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </div>
-          
+          <br>
+
           <p> 
             A második pun háborúban, amikor a Marcellus konzul vezette római hadak megostromolták Siracusát, Arkhimédész ötletes gépezeteket szerkesztett, és a védők döntően ezeknek köszönhetően két évnél is tovább meg tudták tartani a várost, ami végül csak árulás eredményeként esett el.
             A gépek különösen a római hajóhadnak okoztak nagy veszteségeket.
             Szürakuszai védelmére állítólag olyan gépezeteket tervezett, amelyek egész hajókat emeltek fel kötelekkel (legénységükkel és a rakománnyal együtt). Ehhez alighanem az általa feltalált csigasort használhatta.
             A legenda szerint egy római támadást úgy hiúsított meg, hogy tükrökkel felgyújtotta a támadó hajók vitorláit. Arkhimédész megparancsolta a katonáknak, hogy csiszolják fényesre bronzpajzsaikat, majd ív alakban felsorakoztatta őket a rakparton, egy hatalmas parabolatükröt hozva így létre. Aztán a tükör visszaverési szögét beállítva a napsugarakat a támadó római hajókra összpontosítva felgyújtotta azokat.
           </p>
+          <br>
         
           <p> 
             Marcellus megparancsolta ugyan, hogy a nagy tudós életét kíméljék meg, de egy légionárius mégis leszúrta a matematikai problémáiba merült 75 éves tudóst. 
             Marcellus a gyilkost megbüntette, és Arkhimédészt tisztességgel eltemettette. 
           </p>
+          <br>
         
           <p> 
             Kívánsága szerint a hengerbe írt gömb és kúp körvonalait, legkedvesebb tételének ábráját vésette sírkövére.
           </p>
+        </div>
+      </div>
+        
 
-        <a class="bg-warning rounded mg-5" href="elete.html">Tovább</a>
       </div>
     </div>
   </div> <!-- card -->

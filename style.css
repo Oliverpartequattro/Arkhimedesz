@@ -19,9 +19,7 @@ body{
     --bs-custom-rgb: 64, 50, 51;
 }
 
-.cursor-help{
-  cursor: help;
-}
+
 
 
  /* #szin{
@@ -73,8 +71,21 @@ body{
     background-color: transparent;
   }
 
+
+  .cursor-help{
+    cursor: help;
+  }
+
+  .cursor-pointer{
+    cursor: pointer;
+  }
+
   .align-justify{
     text-align: justify;
+  }
+
+  .bg-opacity{
+    background-color: rgba(64, 50, 51, 0.95);
   }
 
   a{
@@ -92,3 +103,5 @@ body{
     opacity: 100;
     transition: 0.5s;
   }
+
+  
